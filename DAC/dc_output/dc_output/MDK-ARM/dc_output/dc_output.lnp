@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"dc_output\startup_stm32f429xx.o"
+"dc_output\main.o"
+"dc_output\stm32f4xx_it.o"
+"dc_output\stm32f4xx_hal_msp.o"
+"dc_output\stm32f4xx_hal_dac.o"
+"dc_output\stm32f4xx_hal_dac_ex.o"
+"dc_output\stm32f4xx_hal_rcc.o"
+"dc_output\stm32f4xx_hal_rcc_ex.o"
+"dc_output\stm32f4xx_hal_flash.o"
+"dc_output\stm32f4xx_hal_flash_ex.o"
+"dc_output\stm32f4xx_hal_flash_ramfunc.o"
+"dc_output\stm32f4xx_hal_gpio.o"
+"dc_output\stm32f4xx_hal_dma_ex.o"
+"dc_output\stm32f4xx_hal_dma.o"
+"dc_output\stm32f4xx_hal_pwr.o"
+"dc_output\stm32f4xx_hal_pwr_ex.o"
+"dc_output\stm32f4xx_hal_cortex.o"
+"dc_output\stm32f4xx_hal.o"
+"dc_output\stm32f4xx_hal_exti.o"
+"dc_output\stm32f4xx_hal_tim.o"
+"dc_output\stm32f4xx_hal_tim_ex.o"
+"dc_output\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "dc_output\dc_output.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dc_output.map" -o dc_output\dc_output.axf

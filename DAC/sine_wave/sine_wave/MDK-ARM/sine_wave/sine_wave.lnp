@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"sine_wave\startup_stm32f429xx.o"
+"sine_wave\main.o"
+"sine_wave\stm32f4xx_it.o"
+"sine_wave\stm32f4xx_hal_msp.o"
+"sine_wave\stm32f4xx_hal_dac.o"
+"sine_wave\stm32f4xx_hal_dac_ex.o"
+"sine_wave\stm32f4xx_hal_rcc.o"
+"sine_wave\stm32f4xx_hal_rcc_ex.o"
+"sine_wave\stm32f4xx_hal_flash.o"
+"sine_wave\stm32f4xx_hal_flash_ex.o"
+"sine_wave\stm32f4xx_hal_flash_ramfunc.o"
+"sine_wave\stm32f4xx_hal_gpio.o"
+"sine_wave\stm32f4xx_hal_dma_ex.o"
+"sine_wave\stm32f4xx_hal_dma.o"
+"sine_wave\stm32f4xx_hal_pwr.o"
+"sine_wave\stm32f4xx_hal_pwr_ex.o"
+"sine_wave\stm32f4xx_hal_cortex.o"
+"sine_wave\stm32f4xx_hal.o"
+"sine_wave\stm32f4xx_hal_exti.o"
+"sine_wave\stm32f4xx_hal_tim.o"
+"sine_wave\stm32f4xx_hal_tim_ex.o"
+"sine_wave\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "sine_wave\sine_wave.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "sine_wave.map" -o sine_wave\sine_wave.axf

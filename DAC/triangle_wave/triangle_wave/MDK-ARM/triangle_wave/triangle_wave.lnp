@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"triangle_wave\startup_stm32f429xx.o"
+"triangle_wave\main.o"
+"triangle_wave\stm32f4xx_it.o"
+"triangle_wave\stm32f4xx_hal_msp.o"
+"triangle_wave\stm32f4xx_hal_dac.o"
+"triangle_wave\stm32f4xx_hal_dac_ex.o"
+"triangle_wave\stm32f4xx_hal_rcc.o"
+"triangle_wave\stm32f4xx_hal_rcc_ex.o"
+"triangle_wave\stm32f4xx_hal_flash.o"
+"triangle_wave\stm32f4xx_hal_flash_ex.o"
+"triangle_wave\stm32f4xx_hal_flash_ramfunc.o"
+"triangle_wave\stm32f4xx_hal_gpio.o"
+"triangle_wave\stm32f4xx_hal_dma_ex.o"
+"triangle_wave\stm32f4xx_hal_dma.o"
+"triangle_wave\stm32f4xx_hal_pwr.o"
+"triangle_wave\stm32f4xx_hal_pwr_ex.o"
+"triangle_wave\stm32f4xx_hal_cortex.o"
+"triangle_wave\stm32f4xx_hal.o"
+"triangle_wave\stm32f4xx_hal_exti.o"
+"triangle_wave\stm32f4xx_hal_tim.o"
+"triangle_wave\stm32f4xx_hal_tim_ex.o"
+"triangle_wave\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "triangle_wave\triangle_wave.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "triangle_wave.map" -o triangle_wave\triangle_wave.axf
